@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Mapel</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <center>
+      <h1>Jadwal Pelajaran</h1>
+
+      <h2 id="displayDateTime"></h2>
+      <br />
+      <img
+        src="https://i.postimg.cc/WpYdsjRF/image-2022-08-20-075202028.png" width="400"
+        alt="mapel"
+      />
+    </center>
+  </body>
+  <script type="text/javascript">
+    var today = new Date();
+    var day = today.getDay();
+    var daylist = [
+      "Minggu/Libur",
+      "Senin",
+      "Selasa",
+      "Rabu",
+      "Kamis",
+      "Jumat",
+      "Sabtu/Libur",
+    ];
+    var seragam = [
+    " - ",
+    "PSAS Lengkap - Baju Bengkel",
+    "Putih - Abu",
+    "Pramuka",
+    "Batik",
+    "Muslim",
+    " - ",
+    ];
+    var mapel = [
+    " - ",
+    "PPK, DDG, PEMDAS",
+    "DDG, B INGGRIS, SEJARAH, SENI BUDAYA",
+    "PABP, PJOK, B INDONESIA",
+    "INFORMATIKA, PKN, MATEMATIKA",
+    "IPAS, SUNDA",
+    " - ",
+    ]; 
+    var tambahan = [
+    "Rebahan ampe gila/prepare senin ",
+    "Aksesoris Lengkap, Laptop, Mental yg kuat :v",
+    "Laptop buat DDG, Kamus Inggris",
+    "Baju Olahraga, Buku Literasi",
+    "Laptop ( kalo disuruh )",
+    "Jumatan/Keputrian",
+    "ngerjain PR sih kayaknya",
+    ];
+    var date =
+      today.getDate() +
+      "-" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getFullYear();
+    var date = date;
+
+    document.getElementById("displayDateTime").innerHTML =
+      "<br>Tanggal : " + date + " <br> Sekarang hari : " + daylist[day] + "<br> Seragam : " + seragam[day] + "<br> Mapel : " + mapel[day] + "<br> note : " + tambahan[day];
+  </script>
+</html>
