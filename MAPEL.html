@@ -7,13 +7,13 @@
   <body>
     <center>
       <h1>Jadwal Pelajaran</h1>
-
       <h2 id="displayDateTime"></h2>
-      <br />
+      <br>
       <img
         src="https://i.postimg.cc/WpYdsjRF/image-2022-08-20-075202028.png" width="400"
         alt="mapel"
       />
+      <h2 id="displayDateTime2"></h2>
     </center>
   </body>
   <script type="text/javascript">
@@ -29,6 +29,42 @@
       "Sabtu/Libur",
     ];
     var seragam = [
+    " - ",
+    "PSAS Lengkap - Baju Bengkel",
+    "Putih - Abu",
+    "Pramuka",
+    "Batik",
+    "Muslim",
+    " - ",
+    ];
+    var mapel = [
+    " - ",
+    "PPK, DDG, PEMDAS",
+    "DDG, B INGGRIS, SEJARAH, SENI BUDAYA",
+    "PABP, PJOK, B INDONESIA",
+    "INFORMATIKA, PKN, MATEMATIKA",
+    "IPAS, SUNDA",
+    " - ",
+    ]; 
+    var tambahan = [
+    "Rebahan ampe gila/prepare senin ",
+    "Aksesoris Lengkap, Laptop, Mental yg kuat :v",
+    "Laptop buat DDG, Kamus Inggris",
+    "Baju Olahraga, Buku Literasi",
+    "Laptop ( kalo disuruh )",
+    "Jumatan/Keputrian",
+    "Kerjakan PR bila ada",
+    ];
+    var daylist2 = [
+      "Senin",
+      "Selasa",
+      "Rabu",
+      "Kamis",
+      "Jumat",
+      "Sabtu/Libur",
+      "Minggu/Libur",
+    ];
+    var seragam2 = [
     "PSAS Lengkap - Baju Bengkel",
     "Putih - Abu",
     "Pramuka",
@@ -37,7 +73,7 @@
     " - ",
     " - ",
     ];
-    var mapel = [
+    var mapel2 = [
     "PPK, DDG, PEMDAS",
     "DDG, B INGGRIS, SEJARAH, SENI BUDAYA",
     "PABP, PJOK, B INDONESIA",
@@ -46,14 +82,14 @@
     " - ",
     " - ",
     ]; 
-    var tambahan = [
+    var tambahan2 = [
     "Aksesoris Lengkap, Laptop, Mental yg kuat :v",
     "Laptop buat DDG, Kamus Inggris",
     "Baju Olahraga, Buku Literasi",
     "Laptop ( kalo disuruh )",
     "Jumatan/Keputrian",
-    "ngerjain PR sih kayaknya",
-    "Rebahan ampe gila/prepare senin ",
+    " - ",
+    " - ",
     ];
     var date =
       today.getDate() +
@@ -64,6 +100,9 @@
     var date = date;
 
     document.getElementById("displayDateTime").innerHTML =
-      "<br>Tanggal : " + date + " <br> Sekarang hari : " + daylist[day] + "<br><br> untuk besok: " + "<br>Seragam besok : " + seragam[day] + "<br> Mapel besok : " + mapel[day] + "<br> bawaan : " + tambahan[day];
+      "<br>Tanggal : " + date + " <br> Sekarang hari : " + daylist[day] +  "<br> Mapel : " + mapel[day] + "<br> tambahan : " + tambahan[day];
+
+      document.getElementById("displayDateTime2").innerHTML =
+      "untuk besok " + "hari " + daylist2[day] + "<br>Seragam besok : " + seragam2[day] + "<br> Mapel besok : " + mapel2[day] + "<br> tambahan : " + tambahan2[day];
   </script>
 </html>
