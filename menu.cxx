@@ -14,13 +14,13 @@ int main()
 	cin >> user;
 	if(user==1)
 	{
-		cout << "1. Menghitung Volume Tabung\nMasukkan Jari-Jari : ";
-		cin >> jari; // Menyimpan Data panjang
-		cout << "Masukkan Tinggi : "; // Input Lebar
-		cin >> tinggi; // Menyimpan Data Lebar
-		hasil = phi*jari*jari*tinggi; //Menghitung Hasil
-		cout << "Jadi, Volume Tabung dari jari-jari " << jari << " dan tinggi " << tinggi << " adalah " << hasil;
-	}	else if(user==2) {
+	cout << "1. Menghitung Volume Tabung\nMasukkan Jari-Jari : ";
+	cin >> jari; // Menyimpan Data panjang
+	cout << "Masukkan Tinggi : "; // Input Lebar
+	cin >> tinggi; // Menyimpan Data Lebar
+	hasil = phi*jari*jari*tinggi; //Menghitung Hasil
+	cout << "Jadi, Volume Tabung dari jari-jari " << jari << " dan tinggi " << tinggi << " adalah " << hasil;
+	} else if(user==2) {
 	cout << "2. Menghitung Volume Kerucut\nMasukkan Rusuk : "; // Menampilkan hasil
 	cin >> jari;
 	cout << "Masukkan Tinggi : ";
