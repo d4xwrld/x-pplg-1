@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+    
+int main() {
+    string pin;
+    string correctPin = "123456";
+    int attempts;
+
+    while (pin != correctPin) {
+        cout << "Masukkan PIN: ";
+        cin >> pin;
+
+        if (pin.length() > 6) {
+            cout << "PIN harus maksimal 6 digit." << endl;
+        } else {
+            attempts++;
+            if (attempts >= 3) {
+                cout << "Anda salah memasukkan PIN 3 kali. Program selesai." << endl;
+                return 0;
+            } else if (pin != correctPin) {
+                cout << "PIN salah, coba lagi." << endl;
+            }
+        }
+    }
+
+    cout << "PIN benar." << endl;
+
+    return 0;
+}
+0;
+}
